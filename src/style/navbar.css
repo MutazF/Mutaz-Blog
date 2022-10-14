@@ -9,6 +9,7 @@
   font-size: 3rem /* 48px */;
   font-weight: 700;
   color: #fffffe;
+  text-decoration: none;
 }
 .nav-item a {
   color: #eebbc3;
