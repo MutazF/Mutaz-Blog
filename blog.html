@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mutaz Blog</title>
+    <link rel="stylesheet" href="/src/style/artical.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="Logo">Mutaz</div>
+            <div class="nav-item">
+                <div class="nav-item">
+                    <a href="/index.html">Home</a>
+                    <a href="#blog">Blog</a>
+                    <a href="#contact">contact</a>
+                </div>
+        </nav>
+    </header>
+    <aside class="post-sider">
+        <div class="author-info">
+            <h2>Author</h2>
+            <img src="/src/img/IMG_7249.png" alt="author image">
+            <p>Hello, my name is mutaz fallata <br> I'm a front-end developer, and I'll be sharing interesting subjects
+                about web development, ui/ux, andmore with you on my blog.</p>
+        </div>
+        <div class="details">
+            <h2>Details</h2>
+            <ul>
+                <li>Published october 14, 2022</li>
+            </ul>
+            <div>
+                <h2>Category</h2>
+                <ul>
+                    <li><a href="#">Front End</a></li>
+                </ul>
+            </div>
+            <h2>Tags</h2>
+            <div class="tags">
+                <a class="tag" href="#">Html</a>
+                <a class="tag" href="#">Css</a>
+            </div>
+        </div>
+    </aside>
+    <main class="article-layout">
+        <div class="art-container">
+            <div class="art-img">
+                <img src="/src/img/Css-units.png" alt="Css-unites">
+            </div>
+            <div class="art-title">
+                <h2>CSS Units</h2>
+            </div>
+            <div class="art-card">
+                <h3>What is css unit?</h3>
+                <p>A CSS unit specifies the size of a property that you provide for an element or its content. For
+                    instance, if you wanted to change a paragraph's property margin, you would give it a certain value.
+                    This value must include CSS unite.</p>
+                <h3>Units: Relative or Absolute</h3>
+                <p>The two types of units <em>absolute and relativeshould</em> be taken into account while comparing all
+                    of the potential possibilities for which units to choose.</p>
+
+                <h3>Absolute unit</h3>
+                <p>Regardless of the parent element or window size, "absolute" units have the same size. Therefore,
+                    whether shown on a small phone screen or a huge display, a property set with an absolute unit
+                    value will appear the same size.
+                    When working on a project where responsiveness is not being taken into account, absolute units
+                    might be advantageous. For instance, desktop applications that cannot be scaled can be styled
+                    for the standard dimensions. You do not require content scaling if the screen is not.
+                </p>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>unit</th>
+                            <th>Equivalent to</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>cm</td>
+                            <td>1cm = 37.8px = 25.2/64in</td>
+                        </tr>
+                        <tr>
+                            <td>mm</td>
+                            <td>1mm = 1/10th of 1cm</td>
+                        </tr>
+                        <tr>
+                            <td>in</td>
+                            <td>1in = 2.54cm = 96px</td>
+                        </tr>
+                        <tr>
+                            <td>Q</td>
+                            <td>1Q = 1/40th of 1cm</td>
+                        </tr>
+                        <tr>
+                            <td>pc</td>
+                            <td>1pc = 1/6th of 1in</td>
+                        </tr>
+                        <tr>
+                            <td>pt</td>
+                            <td>1pt = 1/72nd of 1in</td>
+                        </tr>
+                        <tr>
+                            <td>px</td>
+                            <td>1px = 1/96th of 1in</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <h3>Relative unit</h3>
+                <p>Since relative units scale in accordance with the parent or window size, they are helpful for
+                    designing responsive websites.The table below lists some of the most helpful units for web
+                    development.
+                </p>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>unit</th>
+                            <th>Relative to</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>em</td>
+                            <td> the Font size of the parent</td>
+                        </tr>
+                        <tr>
+                            <td>rem</td>
+                            <td>Font size of the root element</td>
+                        </tr>
+                        <tr>
+                            <td>ch</td>
+                            <td>The advance measure (width) of the glyph "0" of the element's font</td>
+                        </tr>
+                        <tr>
+                            <td>ex</td>
+                            <td>x-height of the element's font</td>
+                        </tr>
+                        <tr>
+                            <td>vw</td>
+                            <td>1% of the viewport's width</td>
+                        </tr>
+                        <tr>
+                            <td>vh</td>
+                            <td>1% of the viewport's height</td>
+                        </tr>
+                        <tr>
+                            <td>vmin</td>
+                            <td>1% of the viewport's smaller dimension</td>
+                        </tr>
+                        <tr>
+                            <td>vmax</td>
+                            <td>1% of the viewport's larger dimension</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <h3 class="share-title">if you like the article share it on:</h3>
+            <div class="shares">
+                <a class="share" href="#">Facebook</a>
+                <a class="share" href="#">Twitter</a>
+                <a class="share" href="#">LinkedIn</a>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="made">
+            <p id="made-by">Mutaz Fallata</p>
+            <p>all rights by mutaz fallata - 2022</p>
+        </div>
+        <div class="links">
+            <div class="links-layout">
+                <p>social</p>
+                <div class="social">
+                    <a href="#">Github</a>
+                    <a href="#">Twitter</a>
+                </div>
+            </div>
+    </footer>
+
+</body>
+
+
+</html>

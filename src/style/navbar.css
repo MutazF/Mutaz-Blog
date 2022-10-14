@@ -1,0 +1,32 @@
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.Logo {
+  font-size: 3rem /* 48px */;
+  font-weight: 700;
+  color: #fffffe;
+}
+.nav-item a {
+  color: #eebbc3;
+  margin: 20px;
+  font-size: 1.5rem /* 24px */;
+}
+
+.nav-item a:hover {
+  color: #fffffe;
+  font-size: xx-large;
+  text-decoration: underline;
+  transition: 0.3s ease-out;
+}
+@media (max-width: 600px) {
+  header {
+    position: static;
+  }
+  .nav-item {
+    display: none;
+  }
+}

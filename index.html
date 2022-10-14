@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mutaz Blog</title>
+    <link rel="stylesheet" href="/src/style/style.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div><a class="Logo" href="#">Mutaz Blog</a></div>
+            <div class="nav-item">
+                <a href="#">Home</a>
+                <a href="#blog">Blog</a>
+                <a href="#contact">contact</a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Hi,<br> my name is <br> Mutaz Fallata</h1>
+                <p>I'm a front-end developer, and I'll be sharing interesting subjects about web development, ui/ux, and
+                    more with you on my blog. Please feel free to get in touch with me at any time.</p>
+                <button class="hero-button"><a href="#contact">Contact me</a></button>
+            </div>
+            <div class="hero-img"> <img src="/src/img/Blogging-bro.svg"></div>
+
+        </section>
+        <section id="blog" class="blog">
+            <div class="blog-title">
+                <h2>Latest articles</h2>
+            </div>
+            <div class="blog-layout">
+                <div class="blog-card">
+                    <img src="/src/img/Css-units.png" alt="css units img">
+                    <div class="category">
+                        <a href="#">css</a>
+                        <a href="#">Html</a>
+                    </div>
+                    <h3>Css units</h3>
+                    <p>A CSS unit specifies the size of a property that you provide for an element or its content. For
+                        instance, if you wanted to change a paragraph's property margin, you would give it a certain
+                        value.This value must include CSS unit</p>
+                    <button"><a class="Read-more" href=" /blog.html">Read-more</a></button>
+                </div>
+                <div class="blog-card">
+                    <img src="/src/img/ux.jpeg" alt="post img ">
+                    <div class="category">
+                        <a href="#">ui</a>
+                        <a href="#">ux</a>
+                    </div>
+                    <h3>Lorem</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem eligendi sapiente quo quis nulla
+                        nobis quae culpa doloremque dolore, officia totam quasi ratione corporis ipsa blanditiis sequi
+                        nostrum consectetur possimus.</p>
+                    <button"><a class="Read-more" href=" /blog.html">Read-more</a></button>
+                </div>
+                <div class="blog-card">
+                    <img src="/src/img/sing-up.jpeg" alt="post img ">
+                    <div class="category">
+                        <a href="#">css</a>
+                        <a href="#">Html</a>
+                    </div>
+                    <h3>Lorem</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem eligendi sapiente quo quis nulla
+                        nobis quae culpa doloremque dolore, officia totam quasi ratione corporis ipsa blanditiis sequi
+                        nostrum consectetur possimus.</p>
+                    <button"><a class="Read-more" href=" /blog.html">Read-more</a></button>
+                </div>
+                <div class="blog-card">
+                    <img src="/src/img/ideas.jpeg" alt="post img ">
+                    <div class="category">
+                        <a href="#">css</a>
+                        <a href="#">Html</a>
+                        <a href="#">ui</a>
+                    </div>
+                    <h3>Lorem</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem eligendi sapiente quo quis nulla
+                        nobis quae culpa doloremque dolore, officia totam quasi ratione corporis ipsa blanditiis sequi
+                        nostrum consectetur possimus.</p>
+                    <button"><a class="Read-more" href=" /blog.html">Read-more</a></button>
+                </div>
+            </div>
+
+        </section>
+        <section id="contact" class="contact">
+            <div class="contact-title">
+                <h2>contact</h2>
+            </div>
+            <div class="contact-info">
+                <p>Say Hello</p>
+            </div>
+            <form action="" method="post">
+                <div class="contact-layout">
+                    <div class="user-input">
+                        <label for="first-name">First Name</label>
+                        <input type="text" name="first-name" class="input" minlength="3" maxlength="30" required>
+                    </div>
+                    <div class="user-input">
+                        <label for="last-name">Last Name</label>
+                        <input type="text" name="last-name" class="input" minlength="3" maxlength="30" required>
+                    </div>
+                    <div class="user-email">
+                        <label for="email">Email</label>
+                        <input type="email" name="email" class="email" required>
+                    </div>
+                    <div class="user-message">
+                        <label for="message">Message</label>
+                        <textarea name="message" class="message" cols="10" rows="5" required
+                            placeholder="Enter your message"></textarea>
+                    </div>
+                    <div class="sub-button">
+                        <button type="submit" class="button">Submit</button>
+                    </div>
+                </div>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <div class="made">
+            <p id="made-by">Mutaz Fallata</p>
+            <p>all rights by mutaz fallata - 2022</p>
+        </div>
+        <div class="links">
+            <div class="links-layout">
+                <p>social</p>
+                <div class="social">
+                    <a href="#">Github</a>
+                    <a href="#">Twitter</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
