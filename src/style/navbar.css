@@ -23,11 +23,3 @@
   text-decoration: underline;
   transition: 0.3s ease-out;
 }
-@media (max-width: 600px) {
-  header {
-    position: static;
-  }
-  .nav-item {
-    display: none;
-  }
-}

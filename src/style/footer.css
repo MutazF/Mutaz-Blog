@@ -36,9 +36,3 @@ footer {
 .social a:hover {
   color: #eebbc3;
 }
-
-@media (max-width: 600px) {
-  footer {
-    display: none;
-  }
-}

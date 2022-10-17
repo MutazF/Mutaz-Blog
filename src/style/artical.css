@@ -8,27 +8,7 @@ html > * {
   box-sizing: border-box;
 }
 
-body {
-  background: #232946;
-  min-height: 100vh;
-  display: grid;
-  grid-template:
-    "header  header" auto
-    "aside main" 1fr
-    "footer footer" auto/
-    280px 1fr;
-  width: 43%;
-  margin-left: auto;
-  margin-right: auto;
-  gap: 10px;
-}
-
-header {
-  grid-area: header;
-  border-bottom: 1px solid #b8c1ec;
-}
-
-@media (max-width: 1000px) {
+@media only screen and (max-width: 600px) {
   body {
     background: #232946;
     min-height: 100vh;
@@ -37,12 +17,80 @@ header {
       "header " auto
       "main" 1fr
       "aside" auto
-      "footer" auto/
-      auto;
-    width: 100%;
+      "footer" auto/ 350px;
+    gap: 10px;
+    justify-content: space-around;
+  }
+  .navbar {
+    justify-content: space-evenly;
+  }
+  .nav-item {
+    display: none;
+  }
+}
+@media only screen and (min-width: 768px) {
+  body {
+    background: #232946;
+    min-height: 100vh;
+    display: grid;
+    grid-template:
+      "header header" auto
+      "aside main" 1fr
+      "footer footer" auto/
+      220px 1fr;
+    gap: 10px;
+    padding: 0 12px;
+  }
+}
+
+@media only screen and (min-width: 901px) {
+  body {
+    background: #232946;
+    min-height: 100vh;
+    display: grid;
+    grid-template:
+      "header header" auto
+      "aside main" 1fr
+      "footer footer" auto/
+      280px 1fr;
     gap: 10px;
   }
 }
+@media only screen and (min-width: 1280px) {
+  body {
+    background: #232946;
+    min-height: 100vh;
+    display: grid;
+    grid-template:
+      "header header" auto
+      "aside main" 1fr
+      "footer footer" auto/
+      280px 1fr;
+    gap: 10px;
+    padding: 0 3rem;
+  }
+}
+@media only screen and (min-width: 1281px) {
+  body {
+    background: #232946;
+    min-height: 100vh;
+    display: grid;
+    grid-template:
+      "header header" auto
+      "aside main" 1fr
+      "footer footer" auto/
+      280px 1fr;
+    width: 43%;
+    margin: 0 auto;
+    gap: 10px;
+  }
+}
+
+header {
+  grid-area: header;
+  border-bottom: 1px solid #b8c1ec;
+}
+
 /*aside section */
 aside {
   grid-area: aside;
@@ -56,12 +104,24 @@ aside {
   margin: 2rem 0;
   padding: 1.5rem;
 }
+
 .author-info img {
   max-width: 200px;
   max-height: 200px;
   border-radius: 22px;
 }
 
+figure {
+  display: flex;
+  flex-flow: column;
+  max-width: 200px;
+  margin: auto;
+  align-items: center;
+}
+
+blockquote {
+  margin: auto;
+}
 .details h2 {
   font-size: 0.9rem;
   margin: 0 0 1rem;
@@ -105,10 +165,14 @@ main {
   background: #b8c1ec;
   margin: 2rem auto;
   padding: 1.5rem;
+  width: -webkit-fill-available;
 }
 
 .art-img {
-  min-width: 80%;
+  max-width: 100%;
+}
+.art-img img {
+  max-width: 100%;
 }
 .art-title {
   text-align: center;

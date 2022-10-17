@@ -7,21 +7,118 @@ html > * {
   padding: 0;
   margin: 0;
 }
-body {
-  display: flex;
-  flex-wrap: wrap;
-  background-color: #232946;
-  width: 90%;
-  max-width: 1040px;
-  margin-right: auto;
-  margin-left: auto;
-}
+
 body a {
   text-decoration: none;
 }
 header,
 footer {
   flex: 1 100%;
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #232946;
+  }
+  main {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    width: -webkit-fill-available;
+    flex-wrap: nowrap;
+  }
+  .hero {
+    flex-direction: column-reverse;
+  }
+  .hero .hero-content {
+    width: 90%;
+    margin: 0 1.5rem;
+  }
+  .hero .hero-img {
+    width: 100%;
+  }
+  .hero .hero-button {
+    margin: 1rem;
+  }
+
+  .navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+  }
+  .nav-item {
+    display: none;
+  }
+  .contact-layout {
+    border: 2px solid #232946;
+    border-radius: 1rem;
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+    width: 250px;
+    justify-items: center;
+  }
+  .user-input,
+  .user-email,
+  .user-message {
+    flex-wrap: wrap;
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .contact-layout {
+    height: 500px;
+    border: 2px solid #232946;
+    border-radius: 1rem;
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+  .blog .blog-card {
+    max-width: 325px;
+  }
+  .user-message,
+  .user-email,
+  .sub-button {
+    grid-column: span 2;
+  }
+  footer {
+    background: #232946;
+  }
+}
+
+@media only screen and (min-width: 901px) {
+  body {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #232946;
+    width: 90%;
+    max-width: 1040px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .contact-layout {
+    width: 600px;
+    height: 500px;
+    border: 2px solid #232946;
+    border-radius: 1rem;
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+  .user-message,
+  .user-email,
+  .sub-button {
+    grid-column: span 2;
+  }
 }
 
 /* Hedear */
@@ -49,7 +146,7 @@ main {
 }
 .hero-content {
   width: 40%;
-  margin: 0 10px;
+  margin: 2.5rem;
 }
 .hero-content h1 {
   color: #232946;
@@ -83,15 +180,7 @@ main {
   height: auto;
   max-width: 550px;
 }
-@media (max-width: 800px) {
-  .hero {
-    flex-direction: column-reverse;
-    margin: 10px 0;
-  }
-  .hero-content {
-    width: 80%;
-  }
-}
+
 /* Blog section */
 .blog {
   background: #d4d8f0;
@@ -115,7 +204,7 @@ main {
   max-width: 345px;
   background: #fffffe;
   box-sizing: border-box;
-  padding: 10px;
+  padding: 1rem;
   border-radius: 22px;
 }
 .blog-card img {
@@ -164,11 +253,7 @@ main {
   color: #232946;
   border: 2px solid #eebbc3;
 }
-@media (max-width: 800px) {
-  .blog-card {
-    max-width: inherit;
-  }
-}
+
 /* Contact section */
 .contact {
   display: flex;
@@ -180,16 +265,6 @@ main {
 }
 .contact-title {
   grid-column: span 2;
-}
-.contact-layout {
-  width: 600px;
-  height: 500px;
-  border: 2px solid #232946;
-  border-radius: 1rem;
-  padding: 2rem;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 10px;
 }
 
 .user-input,
@@ -203,11 +278,6 @@ main {
   display: flex;
   align-items: center;
   justify-content: flex-end;
-}
-.user-message,
-.user-email,
-.sub-button {
-  grid-column: span 2;
 }
 
 .input,
